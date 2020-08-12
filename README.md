@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/OnlineAlgorismStudy/SIXPACKt?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/OnlineAlgorismStudy/SIXPACK?style=social)
 
-# 아대숲 온라인 알고리즘 스터디 (OnAlSt)
+# 식스팩 보험 (SIXPACK)
 
 ## 기술 스택 소개
 - Java
