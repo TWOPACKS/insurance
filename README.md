@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/TWOPACKS/insurance_board?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/TWOPACKS/insurance_board?style=social)
 
-# 식스팩 보험 (SIXPACK)
+# 보험 게시판 (TWOPACKS_Board)
 
 ## 기술 스택 소개
 - Java
