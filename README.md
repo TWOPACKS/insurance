@@ -1,8 +1,8 @@
-![GitHub](https://img.shields.io/github/license/SIXPACK-insurance/SIXPACK)
-![GitHub contributors](https://img.shields.io/github/contributors/SIXPACK-insurance/SIXPACK)
-![GitHub last commit](https://img.shields.io/github/last-commit/SIXPACK-insurance/SIXPACK)
-![GitHub forks](https://img.shields.io/github/forks/SIXPACK-insurance/SIXPACK?style=social)
-![GitHub stars](https://img.shields.io/github/stars/SIXPACK-insurance/SIXPACK?style=social)
+![GitHub](https://img.shields.io/github/license/TWOPACKS/insurance_board)
+![GitHub contributors](https://img.shields.io/github/contributors/TWOPACKS/insurance_board)
+![GitHub last commit](https://img.shields.io/github/last-commit/TWOPACKS/insurance_board)
+![GitHub forks](https://img.shields.io/github/forks/TWOPACKS/insurance_board?style=social)
+![GitHub stars](https://img.shields.io/github/stars/TWOPACKS/insurance_board?style=social)
 
 # 식스팩 보험 (SIXPACK)
 
