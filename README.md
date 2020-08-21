@@ -1,5 +1,4 @@
 ![GitHub](https://img.shields.io/github/license/TWOPACKS/insurance_board)
-![GitHub](https://img.shields.io/github/license/TWOPACKS/insurance_board)
 ![GitHub contributors](https://img.shields.io/github/contributors/TWOPACKS/insurance_board)
 ![GitHub last commit](https://img.shields.io/github/last-commit/TWOPACKS/insurance_board)
 ![GitHub forks](https://img.shields.io/github/forks/TWOPACKS/insurance_board?style=social)
