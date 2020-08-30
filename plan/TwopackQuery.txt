@@ -1,0 +1,108 @@
+
+CREATE TABLE USER_LIST ( 
+    UserSeq NUMBER(10) NOT NULL,
+    Name VARCHAR2(50) NOT NULL,
+    Gender VARCHAR2(4) NOT NULL,
+    PhoneNo NUMBER(12) NOT NULL,
+    Category VARCHAR2(100),
+    Birth VARCHAR2(8) NOT NULL,
+    Id VARCHAR2(20) NOT NULL,
+    Password VARCHAR2(20) NOT NULL,
+    Address1 VARCHAR2(100) NOT NULL,
+    Address2 VARCHAR2(100),
+    PostNum VARCHAR2(6) NOT NULL,
+    RgtDate DATE NOT NULL,
+    DelChk VARCHAR2(1) NOT NULL,
+    Level NUMBER(1) NOT NULL,
+    Rank VARCHAR2(10),
+    ResLocal VARCHAR2(10),
+    StartDate DATE,
+    JoinRoute VARCHAR2(10)
+);
+
+CREATE TABLE USER_GROUP_LIST ( 
+    GrpSeq NUMBER(10) NOT NULL,
+    GrpCode VARCHAR2(1) NOT NULL,
+    GrpNm VARCHAR2(20)
+);
+
+CREATE TABLE REQUEST_LIST ( 
+    ReqSeq NUMBER(10) NOT NULL,
+    UserName VARCHAR2(50) NOT NULL,
+    UserGender VARCHAR2(2) NOT NULL,
+    ProdCategory VARCHAR2(20) NOT NULL,
+    UserBirth VARCHAR2(8) NOT NULL,
+    UserPhone VARCHAR2(12) NOT NULL,
+    userComment NUMBER(1024) NOT NULL,
+    ReqDate DATE NOT NULL,
+    Status VARCHAR2(1) NOT NULL
+);
+
+CREATE TABLE ANSWER_LIST ( 
+    AnsSeq NUMBER(10) NOT NULL,
+    AnsDate DATE NOT NULL,
+    UserSeq NUMBER(10) NOT NULL,
+    ReqSeq NUMBER(10) NOT NULL,
+    AnsComment VARCHAR2(1024) NOT NULL,
+    Status VARCHAR2(1) NOT NULL
+);
+
+CREATE TABLE PRODUCT_LIST ( 
+    ProSeq NUMBER(10) NOT NULL,
+    ProdName VARCHAR2(128) NOT NULL,
+    ProdCategory VARCHAR2(20) NOT NULL,
+    ProdRegtdate DATE NOT NULL,
+    ProdIntroduce VARCHAR2(1024) NOT NULL,
+    UseStatus VARCHAR2(1) NOT NULL,
+    DelChk VARCHAR2(1) NOT NULL,
+    Price VARCHAR2(10) NOT NULL,
+    InsPeriod NUMBER(100) NOT NULL
+);
+
+CREATE TABLE File_LIST ( 
+    FilSeq NUMBER(10) NOT NULL,
+    FileRoute VARCHAR2(500) NOT NULL,
+    FileName VARCHAR2(100) NOT NULL,
+    RgtDate DATE NOT NULL,
+    DelChk VARCHAR2(1) NOT NULL
+);
+
+CREATE TABLE REGISTRATION_LIST ( 
+    RegSeq NUMBER(10) NOT NULL,
+    ProdSeq VARCHAR2(500) NOT NULL,
+    UserSeq VARCHAR2(100) NOT NULL,
+    InsJoinDate DATE NOT NULL,
+    EndDate DATE NOT NULL
+);
+
+
+CREATE TABLE CHATTING_LIST ( 
+    seq INT(4) NOT NULL,
+    empName VARCHAR2(50) NOT NULL,
+    userName VARCHAR2(50) NOT NULL,
+    gender INT(4) NOT NULL,
+    birth INT(20) NOT NULL,
+    csGroup VARCHAR2(100) NOT NULL,
+    chatEmp VARCHAR2(1024) NOT NULL,
+    chatUser VARCHAR2(1024) NOT NULL,
+    chatState VARCHAR2 (1) NOT NULL,
+    empMemo VARCHAR2(1024) NOT NULL
+);
+
+
+INSERT INTO USER_LIST (userseq, name, gender, phoneno, category, birth, id, password, address1, address2, postnum, rgtdate, delchk, memlevel, rank, reslocal, startdate, joinroute) VALUES(2, '최지연', '여', '01022222222', '펫', '19980306', 'kk', '1234', '천안시 서북구', '서울시 용산구', '12121', TO_DATE('20200827'), '0', '0','대리', '충남', TO_DATE('20200113'), ' ');
+
+INSERT INTO USER_GROUP_LIST (GrpSeq, GrpCode, GrpNm) values (1, 1, 'Twopack');
+
+INSERT INTO REQUEST_LIST (reqseq, username, userGender, prodcategory, userbirth, userphone, usercomment, reqdate, status) VALUES (1, '김정운', '남', '암',  '19920424', '01011111111', '암 보험 하나 들고싶은데 추천해주실 상품 있나요?', TO_DATE('20200828'), 1);
+
+INSERT INTO answer_list (AnsSeq, AnsDate, UserSeq, ReqSeq, AnsComment, Status) VALUES (1, TO_DATE('20200828'), 1, 1, '저희 보험 중 이번 7월에 나온 남성 암보험이 있습니다. 소개 페이지 링크를 보내드릴까요?', '1');
+
+INSERT INTO Product_list (proseq, prodname, prodcategory, prodregtdate, prodintroduce, usestatus, delchk, price, insperiod) VALUES (1, '남성 암보험', '암', TO_DATE('20200801'), '남성에게 발병률이 높은 암이 있다는 사실 알고계시나요? 이제 Twopack 남성 암보험으로 대비하세요!', 1, 0, '39,900', 50);
+
+INSERT INTO File_List (Fileseq, FileRoute, FileName, RgtDate, DelChk) VALUES (1, 'C://Twopack', '남성전용암보험.jpg', TO_DATE('20200801'), 0);
+
+INSERT INTO Registration_List (Regseq, ProdSeq, UserSeq, InsJoinDate, EndDate) VALUES (1, 1, 1, TO_DATE('20200828'), TO_DATE('20700828'));
+
+INSERT INTO Registration_List(seq, empName, userName, gender, birth, csGroup, chatEmp, chatUser, chatState, empMemo) VALUES (1, '최금강', '최지연', '2', 19980306, '펫', '안녕하세요. Twopack 보험 입니다. 어떤 것이 궁금하세요?', '홈페이지 구경하다가 펫보험이 있길래 궁금해서요.. 어떤 상품인지 설명해주세요!', 1, ' ' );
+
