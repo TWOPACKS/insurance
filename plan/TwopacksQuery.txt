@@ -1,18 +1,18 @@
-create SEQUENCE UserList_seq INCREMENT by 1;
+create SEQUENCE UserList_seq;
 
-create SEQUENCE UserGrp_seq INCREMENT by 1;
+create SEQUENCE UserGrp_seq;
 
-create SEQUENCE Request_seq INCREMENT by 1;
+create SEQUENCE Request_seq;
 
-create SEQUENCE Answer_seq INCREMENT by 1;
+create SEQUENCE Answer_seq;
 
-create SEQUENCE Regist_seq INCREMENT by 1;
+create SEQUENCE Regist_seq;
 
-create SEQUENCE ProdList_seq INCREMENT by 1;
+create SEQUENCE ProdList_seq;
 
-create SEQUENCE File_seq INCREMENT by 1;
+create SEQUENCE File_seq;
 
-create SEQUENCE ChatList_seq INCREMENT by 1;
+create SEQUENCE ChatList_seq;
 
 
 CREATE TABLE USER_LIST ( 
