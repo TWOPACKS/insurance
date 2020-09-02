@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/TWOPACKS/insurance_board?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/TWOPACKS/insurance_board?style=social)
 
-# 보험 홈페이지 (TWOPACKS_Board)
+# 보험 홈페이지 (TWOPACKS)
 
 ## 기술 스택 소개
 - Java
